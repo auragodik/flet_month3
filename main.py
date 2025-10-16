@@ -61,6 +61,8 @@ def main(page: ft.Page):
         if greeting_history:
             greeting_history.pop()
             history_text.value = 'История приветствий:\n ' + '\n'.join(greeting_history)
+        else:
+            print('История пуста!')
             page.update()
 
 
